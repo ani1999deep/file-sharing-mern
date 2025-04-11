@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./App.css";
 
 function App() {
@@ -8,7 +8,9 @@ function App() {
   const handleUpload = () => {
     uploadRef.current.click();
   };
-  console.log("====>", file);
+  //API call with data
+  useEffect(() => {}, [file]);
+  // console.log("====>", file);
   return (
     <div className="container">
       <h1>File Sharing App</h1>
