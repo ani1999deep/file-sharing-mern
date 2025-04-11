@@ -1,0 +1,82 @@
+/* Container Styles */
+.container {
+  background-color: rgb(153, 0, 0);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Button Styles */
+button {
+  background-color: white;
+  color: maroon;
+  border: 2px solid maroon;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* Add hover effect */
+button:hover {
+  background-color: maroon;
+  color: white;
+}
+
+/* Link Styles */
+a {
+  flex: 1;
+  overflow-wrap: anywhere;
+  color: #f8bebe;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Copy Button Checkmark */
+button span {
+  color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  button {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 0.9rem;
+  }
+}
