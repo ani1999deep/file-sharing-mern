@@ -4,8 +4,7 @@ import dotenv from "dotenv";
 const Connection = () => {
   dotenv.config();
 
-  const URL =
-    "mongodb+srv://anideepg123:anideep1234@filesharing.slvxj1l.mongodb.net/";
+  const URL = "url ";
 
   mongoose
     .connect(URL)
