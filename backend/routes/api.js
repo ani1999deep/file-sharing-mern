@@ -1,4 +1,5 @@
 import express from "express";
+import { UploadController } from "../controller/uploadController";
 
 const router = express.Router();
 
